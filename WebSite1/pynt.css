@@ -1,0 +1,40 @@
+body {
+	background-color: rgb(49,118,139);
+}
+
+
+
+#header {
+	
+	text-align: center;
+}
+
+#content {
+	padding 30px;
+
+}
+
+#nav {
+	
+	clear: both;
+	height:100px;
+}
+
+#main {
+	float: left;
+	height: 0px;
+	
+}
+
+#TeamBilder { 
+	width: 50%;
+	height: 0px;
+	
+	
+	float: right;
+	
+
+}
+
+
+
