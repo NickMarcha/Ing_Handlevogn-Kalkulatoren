@@ -6,9 +6,28 @@
     <link href="StyleSheet.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <style>
-        #text {width: 35%; margin: 10px;}
-        #bilde {float: right; margin-right: 20%; width: 300px; height: 300px;}
-        #navn {text-decoration: underline; text-decoration-style: dashed; margin-left: 10%;}
+        #text {
+            width: 35%; 
+            margin: 10px; 
+            font-size: 20px; 
+            font-family: fantasy, sans-serif;
+        }
+        #bilde {
+            float: right; 
+            margin-right: 20%; 
+            width: 300px; 
+            height: 300px; 
+            margin-top: 2%; 
+            border-color: black; 
+            border-width: 8px; 
+            border-style: solid;
+        }
+        #navn {
+            text-decoration: underline; 
+            text-decoration-style: dashed; 
+            margin-left: 10%; 
+            font-size: 40px;
+        }
     </style>
 </head>
 <body>
@@ -21,7 +40,7 @@
     <table>
         <tr>
             <td>
-                <img id="bilde" src="Bilder/21244849_1277926445670381_1500075895_n.jpg">
+                <a href="https://www.facebook.com/torandre.larsen.7"><img id="bilde" src="Bilder/21244849_1277926445670381_1500075895_n.jpg"></a>
                 <ul>
                     <li>Alder: 18 år</li>
                     <li>Født: Bergen</li>
@@ -30,11 +49,12 @@
                     <li>Interesser: Data og fiske</li>
                     <li>Høyde: ca. 180 cm</li>
                     <li>Hårfarge: Kommunegrått</li>
+                    <li>Kjæledyr: En kanin og en katt</li>
                 </ul>
             </td>
         </tr>
     </table>
-    <p id="text">Tor André er født i Bergen og har bodd der hele sitt liv. Halve familien hans er fra Trøndelag. Han studerer på Høgskulen på Vestlandet. Har tidligere studert på Slåtthaug ungdomskole og Sandsli videregående skole.</p>
+    <p id="text">Tor André er født i Bergen og har bodd der hele sitt liv. Halve familien hans er fra Trøndelag. Han studerer på Høgskulen på Vestlandet. Tidligere har han studert på Slåtthaug ungdomskole og Sandsli videregående skole.</p>
     
     <script>
         $(function () {
@@ -42,5 +62,6 @@
         });
     </script>
     <!--end of Navigation bar-->
+    <footer>&copy; 2018 Alt har en pris</footer>
 </body>
 </html>
