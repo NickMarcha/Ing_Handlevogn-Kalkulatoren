@@ -1,4 +1,8 @@
-﻿.navbar {
+body {
+	background-color: rgb(49,118,139);
+}
+
+.navbar {
     overflow: hidden;
     background-color: #333;
     font-family: Arial, Helvetica, sans-serif;
@@ -96,16 +100,22 @@ td {
 }
 
 body {
-    background-color: dimgrey;
+    background-color: rgb(49,118,139);
 }
 
 a {
     color: yellow;
     font-family: "Comic Sans MS"
 }
+
 #TeamBilder {
     border: 2px solid blue;
     float: right;
     width: 66%;
     margin: 10px 10px 10px 10px;
+}
+
+#navn{
+    margin-left: 5%; 
+    font-size: 35px;
 }
