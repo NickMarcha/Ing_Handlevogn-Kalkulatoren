@@ -1,41 +1,35 @@
-body {
-	background-color: rgb(49,118,139);
-}
-
 .navbar {
     overflow: hidden;
     background-color: #333;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-    .navbar a {
-        float: left;
-        font-size: 16px;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
 
 .dropdown {
     float: left;
     overflow: hidden;
 }
-
-    .dropdown .dropbtn {
-        font-size: 16px;
-        border: none;
-        outline: none;
-        color: white;
-        padding: 14px 16px;
-        background-color: inherit;
-        font-family: "Comic Sans MS";
-        margin: 0;
-    }
-
-    .navbar a:hover, .dropdown:hover .dropbtn {
-        background-color: red;
-    }
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: "Comic Sans MS";
+    margin: 0;
+}
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
 
 .dropdown-content {
     display: none;
@@ -46,18 +40,18 @@ body {
     z-index: 1;
 }
 
-    .dropdown-content a {
-        float: none;
-        color: black;
-        padding: 12px 16px;
-        text-decoration: none;
-        display: block;
-        text-align: left;
-    }
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
 
-        .dropdown-content a:hover {
-            background-color: #ddd;
-        }
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -67,7 +61,7 @@ body {
 .TableHead, h1 {
     color: purple;
     font-size: larger;
-    font-family: "Comic Sans MS"
+    font-family: "Comic Sans MS";
 }
 
 img {
@@ -77,7 +71,7 @@ img {
 
 li {
     color: white;
-    font-family: "Comic Sans MS"
+    font-family: "Comic Sans MS";
 }
 
 table {
@@ -96,7 +90,7 @@ tr {
 
 td {
     color: white;
-    font-family: "Comic Sans MS"
+    font-family: "Comic Sans MS";
 }
 
 body {
@@ -105,7 +99,7 @@ body {
 
 a {
     color: yellow;
-    font-family: "Comic Sans MS"
+    font-family: "Comic Sans MS";
 }
 
 #TeamBilder {
@@ -118,4 +112,12 @@ a {
 #navn{
     margin-left: 5%; 
     font-size: 35px;
+}
+
+#bilder{
+    float: right; 
+    margin-right: 10%;
+    margin-top: 2%;
+    width: 300px; 
+    height: 300px;
 }
