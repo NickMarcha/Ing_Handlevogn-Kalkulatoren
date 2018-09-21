@@ -14,8 +14,35 @@
             $("#nav-placeholder").load("https://raw.githubusercontent.com/h578011/Ing_Handlevogn-Kalkulatoren/master/WebSite1/nav.html");
         });
     </script>
-	
-	<h1>Input</h1>
-    <footer>&copy; 2018 Damanito</footer>
+
+    <h1>Input</h1>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <form id="myForm" action="POST" target=" no-target">
+        <input id="vareNavnInput" placeholder="Hva er varens navn?" name="vareNavn" /> <br> <br>
+        <input id="vareStrekkodeInput" placeholder="Hva er varens strekkode?" name="vareStrekkode" /> <br> <br>
+        <input id="varePrisInput" placeholder="Hva er varens pris?" name="varePris" /> <br> <br>
+        <button id="formSubmit" type="submit">Klikk her for å skrive til database</button>
+    </form>
+
+    <iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>
+    <script>
+        $('myForm').on('submit', function () {
+            var baseURL = "https://docs.google.com/forms/d/e/1FAIpQLScay6E42LjCoYzZ-4KzLp6Q0jf4GKuAfX81-ojLo1SLAo267g/formResponse?";
+            var submitRef = "&submit=M2UYVd";
+            var vareNavn = encodeURIComponent($("#vareNavnInput").val());
+            var vareNavnID = "entry.622058584";
+            var vareStrekKode = encodeURIComponent($("#vareStrekkodeInput").val());
+            var vareStrekKodeID = "entry.554778713";
+            var varePris = encodeURIComponent($("#varePrisInput").val());
+            var varePrisID = "entry.578785986";
+
+            var submitURL = (baseURL + vareNavnID + "=" + vareNavn + "&" + vareStrekKodeID + "=" + vareStrekKode + "&" + varePrisID + "=" + varePris + submitRef);
+            console.log(submitURL);
+
+            $(this)[0].action = submitURL;
+            $('#vareNavnInput').addClass('active').val("Thank Tou!");
+        });
+    </script>
 </body>
 </html>
