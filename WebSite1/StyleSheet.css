@@ -122,6 +122,13 @@ a {
     height: auto;
 }
 
+#text {
+    width: 35%; 
+    margin: 10px; 
+    font-size: 20px; 
+    font-family: fantasy, sans-serif;
+}
+
 .faceImage{
     width:100%;
     height:auto;
