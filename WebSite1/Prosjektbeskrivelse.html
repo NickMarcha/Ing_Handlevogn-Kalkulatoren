@@ -5,13 +5,23 @@
         <meta charset="utf-8"/>
         <title>Prosjektbeskrivelse</title>
         <link href="StyleSheet.css" rel="stylesheet">
+        
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     </head>
 
     <body>
         <div id="nav-placeholder">
 
         </div>
+        
+        <script>
+            $(function () {
+                $("#nav-placeholder").load("https://raw.githubusercontent.com/h578011/Ing_Handlevogn-Kalkulatoren/master/WebSite1/nav.html");
+            });
+        </script>
+        <!--end of Navigation bar-->
 
+        <a href="Prosjektbeskrivelse/Prosjektbeskrivelse.pdf" download>Prosjektbeskrivelse</a>
         <p>
             Vår prosjektidé er en nettside som sammenligner matvarepriser.<br> 
             Brukerne kan selv skanne inn strekkoder på matvarer de er interesserte i og legge inn pris.<br> 
