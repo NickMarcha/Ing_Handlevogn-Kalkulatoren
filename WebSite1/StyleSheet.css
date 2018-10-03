@@ -59,7 +59,7 @@
 
 /*Tables*/
 .TableHead, h1 {
-    color: purple;
+    color: yellow;
     font-size: larger;
     font-family: "Comic Sans MS";
 }
@@ -100,13 +100,6 @@ body {
 a {
     color: yellow;
     font-family: "Comic Sans MS";
-}
-
-#TeamBilder {
-    border: 2px solid blue;
-    float: right;
-    width: 66%;
-    margin: 10px 10px 10px 10px;
 }
 
 #navn{
