@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8" />
-        <title>Team</title>
-        <link href="StyleSheet.css" rel="stylesheet">
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<meta charset="utf-8" />
+		<title>HK/Team</title>
+		<link href="StyleSheet.css" rel="stylesheet">
+		<link rel="shortcut icon" type="image/x-icon" href="icon.ico" />
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     </head>
     <body>
+	<div id="nav-placeholder">
+    </div>
+	<p> Under konstruksjon</p>
         <div class='row hoverswitch'>
             <div class='col-xs-2'>
                 <div class='face'>
@@ -15,5 +19,12 @@
                 </div>
             </div>
         </div>
+		<script>
+        $(function () {
+            $("#nav-placeholder").load("https://raw.githubusercontent.com/h578011/Ing_Handlevogn-Kalkulatoren/master/WebSite1/nav.html");
+            $("#teampage-placeholder").load("https://raw.githubusercontent.com/h578011/Ing_Handlevogn-Kalkulatoren/master/WebSite1/team.html");
+        });
+    </script>
+    <footer>&copy; 2018 Damanito</footer>
     </body>
 </html>
