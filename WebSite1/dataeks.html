@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8"/>
+        <title>Prosjektbeskrivelse</title>
+        <link href="StyleSheet.css" rel="stylesheet">
+
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    </head>
+
+    <body>
+        <div id="nav-placeholder">
+
+        </div>
+
+        <script>
+            $(function () {
+                $("#nav-placeholder").load("https://raw.githubusercontent.com/h578011/Ing_Handlevogn-Kalkulatoren/master/WebSite1/nav.html");
+            });
+        </script>
+        <!--end of Navigation bar-->
+
+
+        <p id="test"></p>
+        <script>
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    myFunction(this);
+                }
+            };
+            xhttp.open("GET", "eksempel.xml", true);
+            xhttp.send();
+
+            function myFunction(xml) {
+                var xmlDoc = xml.responseXML;
+                document.getElementById("test").innerHTML =
+                    xmlDoc.getElementsByTagName("butikk")[0].childNodes[0].nodeValue;
+            }
+        </script>
+    </body>
+</html>

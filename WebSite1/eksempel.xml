@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<handleliste>
+    <mat><!--2017-->
+        <butikk>KIWI</butikk>
+        <vare>Tine Lettmelk, 1 liter</vare>
+        <pris>16,90 kr</pris>
+    </mat>
+    <mat><!--2017-->
+        <butikk>Rema 1000</butikk>
+        <vare>Tine Lettmelk, 1 liter</vare>
+        <pris>16,90 kr</pris>
+    </mat>
+    <mat><!--2017-->
+        <butikk>Coop Extra</butikk>
+        <vare>Tine Lettmelk, 1 liter</vare>
+        <pris>16,90 kr</pris>
+    </mat>
+    <mat><!--2018-->
+        <butikk>Spar</butikk>
+        <vare>Tine Lettmelk, 1 liter</vare>
+        <pris>17,20 kr</pris>
+    </mat>
+</handleliste>
