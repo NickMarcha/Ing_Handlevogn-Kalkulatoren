@@ -2,6 +2,9 @@
     overflow: hidden;
     background-color: #333;
     font-family: Arial, Helvetica, sans-serif;
+	/*position: fixed; - Dette setter nav-baren til en fixed pos, men det gjør samtidig at nav-baren blir bare på litt over halve skjermen,
+	det ødelegger dropdown-menyen til teamsidene og det gjør at nav-baren dekker deler av øverste del av de forskjellige sidene.
+	*/
 }
 
 .navbar a {
