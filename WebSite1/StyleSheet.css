@@ -2,9 +2,16 @@
     overflow: hidden;
     background-color: #333;
     font-family: Arial, Helvetica, sans-serif;
-	/*position: fixed; - Dette setter nav-baren til en fixed pos, men det gjør samtidig at nav-baren blir bare på litt over halve skjermen,
-	det ødelegger dropdown-menyen til teamsidene og det gjør at nav-baren dekker deler av øverste del av de forskjellige sidene.
+	/* Dette gjør at nav-baren alltid vil være på toppen av nettsiden, selv når man scroller ned.
+	Dessverre ødelegger det også dropdown-menyen til teamsidene. Det gjør også at deler av den øverste teksten
+	på de forskjellige sidene blir dekket av nav-baren og dermed ikke blir mulig å lese.
+	position: fixed;
+	top: 0;
+	width: 100%;
 	*/
+	position: fixed;
+	top: 0;
+	width: 100%;
 }
 
 .navbar a {
@@ -35,7 +42,7 @@
 
 .dropdown-content {
     display: none;
-    position: absolute;
+    position: fixed;
     background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
