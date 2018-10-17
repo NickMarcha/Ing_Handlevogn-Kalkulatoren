@@ -1,91 +1,105 @@
-2015-11-10 15:26:56 10fc InnoDB: Warning: Using innodb_additional_mem_pool_size is DEPRECATED. This option may be removed in future releases, together with the option innodb_use_sys_malloc and with the InnoDB's internal memory allocator.
-2015-11-10 15:26:56 4348 [Note] InnoDB: Using mutexes to ref count buffer pool pages
-2015-11-10 15:26:56 4348 [Note] InnoDB: The InnoDB memory heap is disabled
-2015-11-10 15:26:56 4348 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
-2015-11-10 15:26:56 4348 [Note] InnoDB: Memory barrier is not used
-2015-11-10 15:26:56 4348 [Note] InnoDB: Compressed tables use zlib 1.2.3
-2015-11-10 15:26:56 4348 [Note] InnoDB: Not using CPU crc32 instructions
-2015-11-10 15:26:56 4348 [Note] InnoDB: Initializing buffer pool, size = 16.0M
-2015-11-10 15:26:56 4348 [Note] InnoDB: Completed initialization of buffer pool
-2015-11-10 15:26:56 4348 [Note] InnoDB: Highest supported file format is Barracuda.
-2015-11-10 15:26:57 4348 [Note] InnoDB: 128 rollback segment(s) are active.
-2015-11-10 15:26:57 4348 [Note] InnoDB: Waiting for purge to start
-2015-11-10 15:26:57 4348 [Note] InnoDB:  Percona XtraDB (http://www.percona.com) 5.6.26-74.0 started; log sequence number 1835027
-2015-11-10 15:26:57 6140 [Note] InnoDB: Dumping buffer pool(s) not yet started
-2015-11-10 15:26:57 4348 [Note] Plugin 'FEEDBACK' is disabled.
-2015-11-10 15:26:57 4348 [Note] Server socket created on IP: '::'.
-2015-11-10 15:26:57 4348 [Note] Event Scheduler: Loaded 0 events
-2015-11-10 15:26:57 4348 [Note] C:\xampp\mysql\bin\mysqld.exe: ready for connections.
-Version: '10.1.8-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
-2015-11-10 15:27:11 5152 [Note] C:\xampp\mysql\bin\mysqld.exe: Normal shutdown
+2018-10-17 18:56:10 2e38 InnoDB: Warning: Using innodb_additional_mem_pool_size is DEPRECATED. This option may be removed in future releases, together with the option innodb_use_sys_malloc and with the InnoDB's internal memory allocator.
+2018-10-17 18:56:10 11832 [Note] InnoDB: innodb_empty_free_list_algorithm has been changed to legacy because of small buffer pool size. In order to use backoff, increase buffer pool at least up to 20MB.
 
-2015-11-10 15:27:11 5152 [Note] Event Scheduler: Purging the queue. 0 events
-2015-11-10 15:27:11 5732 [Note] InnoDB: FTS optimize thread exiting.
-2015-11-10 15:27:11 5152 [Note] InnoDB: Starting shutdown...
-2015-11-10 15:27:13 5152 [Note] InnoDB: Shutdown completed; log sequence number 1835037
-2015-11-10 15:27:13 5152 [Note] C:\xampp\mysql\bin\mysqld.exe: Shutdown complete
-
-2018-10-17 12:24:42 101c InnoDB: Warning: Using innodb_additional_mem_pool_size is DEPRECATED. This option may be removed in future releases, together with the option innodb_use_sys_malloc and with the InnoDB's internal memory allocator.
-2018-10-17 12:24:42 4124 [Note] InnoDB: innodb_empty_free_list_algorithm has been changed to legacy because of small buffer pool size. In order to use backoff, increase buffer pool at least up to 20MB.
-
-2018-10-17 12:24:42 4124 [Note] InnoDB: Using mutexes to ref count buffer pool pages
-2018-10-17 12:24:42 4124 [Note] InnoDB: The InnoDB memory heap is disabled
-2018-10-17 12:24:42 4124 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
-2018-10-17 12:24:42 4124 [Note] InnoDB: _mm_lfence() and _mm_sfence() are used for memory barrier
-2018-10-17 12:24:42 4124 [Note] InnoDB: Compressed tables use zlib 1.2.3
-2018-10-17 12:24:42 4124 [Note] InnoDB: Using generic crc32 instructions
-2018-10-17 12:24:42 4124 [Note] InnoDB: Initializing buffer pool, size = 16.0M
-2018-10-17 12:24:42 4124 [Note] InnoDB: Completed initialization of buffer pool
-2018-10-17 12:24:42 4124 [Note] InnoDB: Highest supported file format is Barracuda.
-2018-10-17 12:24:42 4124 [Note] InnoDB: 128 rollback segment(s) are active.
-2018-10-17 12:24:42 4124 [Note] InnoDB: Waiting for purge to start
-2018-10-17 12:24:42 4124 [Note] InnoDB:  Percona XtraDB (http://www.percona.com) 5.6.39-83.1 started; log sequence number 1835037
-2018-10-17 12:24:42 6656 [Note] InnoDB: Dumping buffer pool(s) not yet started
-2018-10-17 12:24:42 4124 [Note] Plugin 'FEEDBACK' is disabled.
-2018-10-17 12:24:42 4124 [Note] Server socket created on IP: '::'.
-2018-10-17 12:24:43 4124 [Note] c:\xampp\mysql\bin\mysqld.exe: ready for connections.
-Version: '10.1.36-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
-2018-10-17 12:46:44 3a78 InnoDB: Warning: Using innodb_additional_mem_pool_size is DEPRECATED. This option may be removed in future releases, together with the option innodb_use_sys_malloc and with the InnoDB's internal memory allocator.
-2018-10-17 12:46:44 14968 [Note] InnoDB: innodb_empty_free_list_algorithm has been changed to legacy because of small buffer pool size. In order to use backoff, increase buffer pool at least up to 20MB.
-
-2018-10-17 12:46:44 14968 [Note] InnoDB: Using mutexes to ref count buffer pool pages
-2018-10-17 12:46:44 14968 [Note] InnoDB: The InnoDB memory heap is disabled
-2018-10-17 12:46:44 14968 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
-2018-10-17 12:46:44 14968 [Note] InnoDB: _mm_lfence() and _mm_sfence() are used for memory barrier
-2018-10-17 12:46:44 14968 [Note] InnoDB: Compressed tables use zlib 1.2.3
-2018-10-17 12:46:44 14968 [Note] InnoDB: Using generic crc32 instructions
-2018-10-17 12:46:44 14968 [Note] InnoDB: Initializing buffer pool, size = 16.0M
-2018-10-17 12:46:44 14968 [Note] InnoDB: Completed initialization of buffer pool
-2018-10-17 12:46:44 14968 [Note] InnoDB: Highest supported file format is Barracuda.
-2018-10-17 12:46:44 14968 [Note] InnoDB: The log sequence number 1835037 in ibdata file do not match the log sequence number 1835181 in the ib_logfiles!
-2018-10-17 12:46:44 14968 [Note] InnoDB: Restoring possible half-written data pages from the doublewrite buffer...
-2018-10-17 12:46:45 14968 [Note] InnoDB: 128 rollback segment(s) are active.
-2018-10-17 12:46:45 14968 [Note] InnoDB: Waiting for purge to start
-2018-10-17 12:46:45 14968 [Note] InnoDB:  Percona XtraDB (http://www.percona.com) 5.6.39-83.1 started; log sequence number 1835181
-2018-10-17 12:46:45 14356 [Note] InnoDB: Dumping buffer pool(s) not yet started
-2018-10-17 12:46:45 14968 [Note] Plugin 'FEEDBACK' is disabled.
-2018-10-17 12:46:45 14968 [Note] Server socket created on IP: '::'.
-2018-10-17 12:46:45 14968 [Note] c:\xampp\mysql\bin\mysqld.exe: ready for connections.
-Version: '10.1.36-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
-2018-10-17 12:54:05 3008 InnoDB: Warning: Using innodb_additional_mem_pool_size is DEPRECATED. This option may be removed in future releases, together with the option innodb_use_sys_malloc and with the InnoDB's internal memory allocator.
-2018-10-17 12:54:05 12296 [Note] InnoDB: innodb_empty_free_list_algorithm has been changed to legacy because of small buffer pool size. In order to use backoff, increase buffer pool at least up to 20MB.
-
-2018-10-17 12:54:05 12296 [Note] InnoDB: Using mutexes to ref count buffer pool pages
-2018-10-17 12:54:05 12296 [Note] InnoDB: The InnoDB memory heap is disabled
-2018-10-17 12:54:05 12296 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
-2018-10-17 12:54:05 12296 [Note] InnoDB: _mm_lfence() and _mm_sfence() are used for memory barrier
-2018-10-17 12:54:05 12296 [Note] InnoDB: Compressed tables use zlib 1.2.3
-2018-10-17 12:54:05 12296 [Note] InnoDB: Using generic crc32 instructions
-2018-10-17 12:54:05 12296 [Note] InnoDB: Initializing buffer pool, size = 16.0M
-2018-10-17 12:54:05 12296 [Note] InnoDB: Completed initialization of buffer pool
-2018-10-17 12:54:05 12296 [Note] InnoDB: Highest supported file format is Barracuda.
-2018-10-17 12:54:05 12296 [Note] InnoDB: The log sequence number 1835037 in ibdata file do not match the log sequence number 1836289 in the ib_logfiles!
-2018-10-17 12:54:06 12296 [Note] InnoDB: Restoring possible half-written data pages from the doublewrite buffer...
-2018-10-17 12:54:06 12296 [Note] InnoDB: 128 rollback segment(s) are active.
-2018-10-17 12:54:06 12296 [Note] InnoDB: Waiting for purge to start
-2018-10-17 12:54:06 12296 [Note] InnoDB:  Percona XtraDB (http://www.percona.com) 5.6.39-83.1 started; log sequence number 1836289
-2018-10-17 12:54:06 10496 [Note] InnoDB: Dumping buffer pool(s) not yet started
-2018-10-17 12:54:06 12296 [Note] Plugin 'FEEDBACK' is disabled.
-2018-10-17 12:54:06 12296 [Note] Server socket created on IP: '::'.
-2018-10-17 12:54:06 12296 [Note] c:\xampp\mysql\bin\mysqld.exe: ready for connections.
-Version: '10.1.36-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2018-10-17 18:56:10 11832 [Note] InnoDB: Using mutexes to ref count buffer pool pages
+2018-10-17 18:56:10 11832 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-10-17 18:56:10 11832 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-10-17 18:56:10 11832 [Note] InnoDB: _mm_lfence() and _mm_sfence() are used for memory barrier
+2018-10-17 18:56:10 11832 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-10-17 18:56:10 11832 [Note] InnoDB: Using generic crc32 instructions
+2018-10-17 18:56:10 11832 [Note] InnoDB: Initializing buffer pool, size = 16.0M
+2018-10-17 18:56:10 11832 [Note] InnoDB: Completed initialization of buffer pool
+2018-10-17 18:56:10 11832 [Note] InnoDB: Setting log file D:\Users\Nicol\Documents\GameMakerStudio2\Ing_Handlevogn-Kalkulatoren\Database\data\ib_logfile101 size to 5 MB
+2018-10-17 18:56:10 11832 [Note] InnoDB: Setting log file D:\Users\Nicol\Documents\GameMakerStudio2\Ing_Handlevogn-Kalkulatoren\Database\data\ib_logfile1 size to 5 MB
+2018-10-17 18:56:10 11832 [Note] InnoDB: Renaming log file D:\Users\Nicol\Documents\GameMakerStudio2\Ing_Handlevogn-Kalkulatoren\Database\data\ib_logfile101 to D:\Users\Nicol\Documents\GameMakerStudio2\Ing_Handlevogn-Kalkulatoren\Database\data\ib_logfile0
+2018-10-17 18:56:10 11832 [Warning] InnoDB: New log files created, LSN=1835037
+2018-10-17 18:56:10 11832 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-10-17 18:56:10 2e38 InnoDB: Error: page 5 log sequence number 1835572
+InnoDB: is in the future! Current system log sequence number 1835532.
+InnoDB: Your database may be corrupt or you may have copied the InnoDB
+InnoDB: tablespace but not the InnoDB log files. See
+InnoDB: http://dev.mysql.com/doc/refman/5.6/en/forcing-innodb-recovery.html
+InnoDB: for more information.
+2018-10-17 18:56:10 2e38 InnoDB: Error: page 51 log sequence number 1835777
+InnoDB: is in the future! Current system log sequence number 1835532.
+InnoDB: Your database may be corrupt or you may have copied the InnoDB
+InnoDB: tablespace but not the InnoDB log files. See
+InnoDB: http://dev.mysql.com/doc/refman/5.6/en/forcing-innodb-recovery.html
+InnoDB: for more information.
+2018-10-17 18:56:10 2e38 InnoDB: Error: page 401 log sequence number 1835777
+InnoDB: is in the future! Current system log sequence number 1835532.
+InnoDB: Your database may be corrupt or you may have copied the InnoDB
+InnoDB: tablespace but not the InnoDB log files. See
+InnoDB: http://dev.mysql.com/doc/refman/5.6/en/forcing-innodb-recovery.html
+InnoDB: for more information.
+2018-10-17 18:56:10 2e38 InnoDB: Error: page 53 log sequence number 1837290
+InnoDB: is in the future! Current system log sequence number 1835532.
+InnoDB: Your database may be corrupt or you may have copied the InnoDB
+InnoDB: tablespace but not the InnoDB log files. See
+InnoDB: http://dev.mysql.com/doc/refman/5.6/en/forcing-innodb-recovery.html
+InnoDB: for more information.
+2018-10-17 18:56:10 2e38 InnoDB: Error: page 402 log sequence number 1837290
+InnoDB: is in the future! Current system log sequence number 1835532.
+InnoDB: Your database may be corrupt or you may have copied the InnoDB
+InnoDB: tablespace but not the InnoDB log files. See
+InnoDB: http://dev.mysql.com/doc/refman/5.6/en/forcing-innodb-recovery.html
+InnoDB: for more information.
+2018-10-17 18:56:10 2e38 InnoDB: Error: page 318 log sequence number 1836289
+InnoDB: is in the future! Current system log sequence number 1835532.
+InnoDB: Your database may be corrupt or you may have copied the InnoDB
+InnoDB: tablespace but not the InnoDB log files. See
+InnoDB: http://dev.mysql.com/doc/refman/5.6/en/forcing-innodb-recovery.html
+InnoDB: for more information.
+2018-10-17 18:56:10 2e38 InnoDB: Error: page 57 log sequence number 1837965
+InnoDB: is in the future! Current system log sequence number 1835532.
+InnoDB: Your database may be corrupt or you may have copied the InnoDB
+InnoDB: tablespace but not the InnoDB log files. See
+InnoDB: http://dev.mysql.com/doc/refman/5.6/en/forcing-innodb-recovery.html
+InnoDB: for more information.
+2018-10-17 18:56:10 2e38 InnoDB: Error: page 340 log sequence number 1837965
+InnoDB: is in the future! Current system log sequence number 1835532.
+InnoDB: Your database may be corrupt or you may have copied the InnoDB
+InnoDB: tablespace but not the InnoDB log files. See
+InnoDB: http://dev.mysql.com/doc/refman/5.6/en/forcing-innodb-recovery.html
+InnoDB: for more information.
+2018-10-17 18:56:10 2e38 InnoDB: Error: page 0 log sequence number 1837121
+InnoDB: is in the future! Current system log sequence number 1835532.
+InnoDB: Your database may be corrupt or you may have copied the InnoDB
+InnoDB: tablespace but not the InnoDB log files. See
+InnoDB: http://dev.mysql.com/doc/refman/5.6/en/forcing-innodb-recovery.html
+InnoDB: for more information.
+2018-10-17 18:56:10 11832 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-10-17 18:56:10 11832 [Note] InnoDB: Waiting for purge to start
+2018-10-17 18:56:10 90c InnoDB: Error: page 3 log sequence number 1840933
+InnoDB: is in the future! Current system log sequence number 1835542.
+InnoDB: Your database may be corrupt or you may have copied the InnoDB
+InnoDB: tablespace but not the InnoDB log files. See
+InnoDB: http://dev.mysql.com/doc/refman/5.6/en/forcing-innodb-recovery.html
+InnoDB: for more information.
+2018-10-17 18:56:10 90c InnoDB: Error: page 3 log sequence number 1840269
+InnoDB: is in the future! Current system log sequence number 1835542.
+InnoDB: Your database may be corrupt or you may have copied the InnoDB
+InnoDB: tablespace but not the InnoDB log files. See
+InnoDB: http://dev.mysql.com/doc/refman/5.6/en/forcing-innodb-recovery.html
+InnoDB: for more information.
+2018-10-17 18:56:10 11832 [Note] InnoDB:  Percona XtraDB (http://www.percona.com) 5.6.39-83.1 started; log sequence number 1835532
+2018-10-17 18:56:10 9384 [Note] InnoDB: Dumping buffer pool(s) not yet started
+2018-10-17 18:56:10 11832 [ERROR] mysqld.exe: File 'D:\Users\Nicol\Documents\GameMakerStudio2\Ing_Handlevogn-Kalkulatoren\Database\data\aria_log.00000001' not found (Errcode: 2 "No such file or directory")
+2018-10-17 18:56:10 11832 [Note] Plugin 'FEEDBACK' is disabled.
+2018-10-17 18:56:10 11832 [Note] Server socket created on IP: '::'.
+2018-10-17 18:56:10 11832 [Note] d:\xampp\mysql\bin\mysqld.exe: ready for connections.
+Version: '10.1.35-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2018-10-17 18:56:14 654 InnoDB: Error: page 3 log sequence number 1835681
+InnoDB: is in the future! Current system log sequence number 1835542.
+InnoDB: Your database may be corrupt or you may have copied the InnoDB
+InnoDB: tablespace but not the InnoDB log files. See
+InnoDB: http://dev.mysql.com/doc/refman/5.6/en/forcing-innodb-recovery.html
+InnoDB: for more information.
+2018-10-17 19:06:44 654 InnoDB: Error: page 3 log sequence number 1992497
+InnoDB: is in the future! Current system log sequence number 1842052.
+InnoDB: Your database may be corrupt or you may have copied the InnoDB
+InnoDB: tablespace but not the InnoDB log files. See
+InnoDB: http://dev.mysql.com/doc/refman/5.6/en/forcing-innodb-recovery.html
+InnoDB: for more information.
+2018-10-17 19:07:01 10340 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'min_value' at position 3 to have type varbinary(255), found type varchar(255).
+2018-10-17 19:07:01 10340 [ERROR] Incorrect definition of table mysql.column_stats: expected column 'max_value' at position 4 to have type varbinary(255), found type varchar(255).

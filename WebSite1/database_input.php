@@ -1,8 +1,8 @@
 ﻿<?php
-$servername = "mysql.hostinger.co.uk";
-$database = "u266072517_name";
-$username = "u266072517_user";
-$password = "buystuffpwd";
+$servername = "localhost";
+$database = "handlevognkalkulator";
+$username = "root";
+$password = "";
 
 // Create connection
 
@@ -16,7 +16,7 @@ if (!$conn) {
  
 echo "Connected successfully";
  
-$sql = "INSERT INTO Students (name, lastname, email) VALUES ('Thom', 'Vial', 'thom.v@some.com')";
+$sql = "INSERT INTO kiwiprices (barcode, productcompany, producttype, productname, price) VALUES ('21234566', 'firstprice', 'vegetable',' potatoe', '18')";
 if (mysqli_query($conn, $sql)) {
       echo "New record created successfully";
 } else {
