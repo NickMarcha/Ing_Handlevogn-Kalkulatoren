@@ -22,7 +22,8 @@
         <!--end of Navigation bar-->
 
 
-        <p id="test"></p>
+        <p id="tekst"></p>
+        
         <script>
             var xhttp = new XMLHttpRequest();
             xhttp.onreadystatechange = function() {
@@ -35,7 +36,7 @@
 
             function myFunction(xml) {
                 var xmlDoc = xml.responseXML;
-                document.getElementById("test").innerHTML =
+                document.getElementById("tekst").innerHTML =
                     xmlDoc.getElementsByTagName("butikk")[0].childNodes[0].nodeValue;
             }
         </script>
