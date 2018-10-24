@@ -19,26 +19,75 @@
                 $("#nav-placeholder").load("https://raw.githubusercontent.com/h578011/Ing_Handlevogn-Kalkulatoren/master/WebSite1/nav.html");
             });
         </script>
-        <!--end of Navigation bar-->
+        <!--Fungerer bare på server-->
 
 
-        <p id="tekst"></p>
+		<table id="MainTable">
+			<tbody id="BodyRows"></tbody>
+		</table>
+		<p> Denne siden fungerer bare på server </p>
         
         <script>
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    myFunction(this);
-                }
-            };
-            xhttp.open("GET", "eksempel.xml", true);
-            xhttp.send();
+			window.addEventListener("load", function() {
+				getRows();
+			});
 
-            function myFunction(xml) {
-                var xmlDoc = xml.responseXML;
-                document.getElementById("tekst").innerHTML =
-                    xmlDoc.getElementsByTagName("butikk")[0].childNodes[0].nodeValue;
-            }
+			
+			function getRows() {
+				var xmlhttp = new XMLHttpRequest();
+				xmlhttp.open("get", "eksempel.xml", true);
+				xmlhttp.onreadystatechange = function() {
+					if (this.readyState == 4 && this.status == 200) {
+						showResult(this);
+					}
+				};
+				xmlhttp.send(null);
+			}
+			function showResult(xmlhttp) {
+				var xmlDoc = xmlhttp.responseXML.documentElement;
+			removeWhitespace(xmlDoc);
+			var outputResult = document.getElementById("BodyRows");
+			var rowData = xmlDoc.getElementsByTagName("mat");
+
+			addTableRowsFromXmlDoc(rowData,outputResult);
+			}
+			
+			function removeWhitespace(xml) {
+				var loopIndex;
+				for (loopIndex = 0; loopIndex < xml.childNodes.length; loopIndex++)
+					{
+					var currentNode = xml.childNodes[loopIndex];
+					if (currentNode.nodeType == 1)
+					{
+							removeWhitespace(currentNode);
+					}
+					if (!(/\S/.test(currentNode.nodeValue)) && (currentNode.nodeType == 3))
+					{
+						xml.removeChild(xml.childNodes[loopIndex--]);
+					}
+				}
+			}
+			
+			function addTableRowsFromXmlDoc(xmlNodes,tableNode) {
+				var theTable = tableNode.parentNode;
+				var newRow, newCell, i;
+				console.log ("Number of nodes: " + xmlNodes.length);
+				for (i=0; i<xmlNodes.length; i++) {
+					newRow = tableNode.insertRow(i);
+					newRow.className = (i%2) ? "OddRow" : "EvenRow";
+					for (j=0; j<xmlNodes[i].childNodes.length; j++) {
+						newCell = newRow.insertCell(newRow.cells.length);
+						if (xmlNodes[i].childNodes[j].firstChild) {
+							newCell.innerHTML = xmlNodes[i].childNodes[j].firstChild.nodeValue;
+						} else {
+							newCell.innerHTML = "-";
+						}
+						console.log("cell: " + newCell);
+					}
+				}
+				theTable.appendChild(tableNode);
+			}
+
         </script>
     </body>
 </html>

@@ -34,3 +34,51 @@ Version: '10.1.35-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribut
 2018-10-17 22:42:08 11052 [Warning] InnoDB: Cannot open table handlevognkalkulator/kiwiprices from the internal data dictionary of InnoDB though the .frm file for the table exists. See http://dev.mysql.com/doc/refman/5.6/en/innodb-troubleshooting.html for how you can resolve the problem.
 2018-10-17 22:42:22 11052 [Warning] InnoDB: Cannot open table handlevognkalkulator/kiwiprices from the internal data dictionary of InnoDB though the .frm file for the table exists. See http://dev.mysql.com/doc/refman/5.6/en/innodb-troubleshooting.html for how you can resolve the problem.
 2018-10-17 22:42:56 11052 [Warning] InnoDB: Cannot open table handlevognkalkulator/kiwiprices from the internal data dictionary of InnoDB though the .frm file for the table exists. See http://dev.mysql.com/doc/refman/5.6/en/innodb-troubleshooting.html for how you can resolve the problem.
+2018-10-24 13:23:36 3524 InnoDB: Warning: Using innodb_additional_mem_pool_size is DEPRECATED. This option may be removed in future releases, together with the option innodb_use_sys_malloc and with the InnoDB's internal memory allocator.
+2018-10-24 13:23:36 13604 [Note] InnoDB: innodb_empty_free_list_algorithm has been changed to legacy because of small buffer pool size. In order to use backoff, increase buffer pool at least up to 20MB.
+
+2018-10-24 13:23:36 13604 [Note] InnoDB: Using mutexes to ref count buffer pool pages
+2018-10-24 13:23:36 13604 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-10-24 13:23:36 13604 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-10-24 13:23:36 13604 [Note] InnoDB: _mm_lfence() and _mm_sfence() are used for memory barrier
+2018-10-24 13:23:36 13604 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-10-24 13:23:36 13604 [Note] InnoDB: Using generic crc32 instructions
+2018-10-24 13:23:36 13604 [Note] InnoDB: Initializing buffer pool, size = 16.0M
+2018-10-24 13:23:36 13604 [Note] InnoDB: Completed initialization of buffer pool
+2018-10-24 13:23:36 13604 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-10-24 13:23:36 13604 [Note] InnoDB: The log sequence number 0 in ibdata file do not match the log sequence number 1600614 in the ib_logfiles!
+2018-10-24 13:23:37 13604 [Note] InnoDB: Restoring possible half-written data pages from the doublewrite buffer...
+2018-10-24 13:23:37 13604 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-10-24 13:23:37 13604 [Note] InnoDB: Waiting for purge to start
+2018-10-24 13:23:37 13604 [Note] InnoDB:  Percona XtraDB (http://www.percona.com) 5.6.39-83.1 started; log sequence number 1600614
+2018-10-24 13:23:37 1360 [Note] InnoDB: Dumping buffer pool(s) not yet started
+2018-10-24 13:23:37 13604 [Note] Plugin 'FEEDBACK' is disabled.
+2018-10-24 13:23:37 13604 [Note] Server socket created on IP: '::'.
+2018-10-24 13:23:38 2852 [Warning] InnoDB: Cannot open table mysql/gtid_slave_pos from the internal data dictionary of InnoDB though the .frm file for the table exists. See http://dev.mysql.com/doc/refman/5.6/en/innodb-troubleshooting.html for how you can resolve the problem.
+2018-10-24 13:23:38 2852 [Warning] Failed to load slave replication state from table mysql.gtid_slave_pos: 1932: Table 'mysql.gtid_slave_pos' doesn't exist in engine
+2018-10-24 13:23:38 13604 [Note] d:\xampp\mysql\bin\mysqld.exe: ready for connections.
+Version: '10.1.35-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2018-10-24 13:26:57 e68 InnoDB: Warning: Using innodb_additional_mem_pool_size is DEPRECATED. This option may be removed in future releases, together with the option innodb_use_sys_malloc and with the InnoDB's internal memory allocator.
+2018-10-24 13:26:57 3688 [Note] InnoDB: innodb_empty_free_list_algorithm has been changed to legacy because of small buffer pool size. In order to use backoff, increase buffer pool at least up to 20MB.
+
+2018-10-24 13:26:57 3688 [Note] InnoDB: Using mutexes to ref count buffer pool pages
+2018-10-24 13:26:57 3688 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-10-24 13:26:57 3688 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-10-24 13:26:57 3688 [Note] InnoDB: _mm_lfence() and _mm_sfence() are used for memory barrier
+2018-10-24 13:26:57 3688 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-10-24 13:26:57 3688 [Note] InnoDB: Using generic crc32 instructions
+2018-10-24 13:26:57 3688 [Note] InnoDB: Initializing buffer pool, size = 16.0M
+2018-10-24 13:26:57 3688 [Note] InnoDB: Completed initialization of buffer pool
+2018-10-24 13:26:57 3688 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-10-24 13:26:57 3688 [Note] InnoDB: The log sequence number 0 in ibdata file do not match the log sequence number 1600624 in the ib_logfiles!
+2018-10-24 13:26:57 3688 [Note] InnoDB: Restoring possible half-written data pages from the doublewrite buffer...
+2018-10-24 13:26:57 3688 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-10-24 13:26:57 3688 [Note] InnoDB: Waiting for purge to start
+2018-10-24 13:26:57 3688 [Note] InnoDB:  Percona XtraDB (http://www.percona.com) 5.6.39-83.1 started; log sequence number 1600624
+2018-10-24 13:26:57 1372 [Note] InnoDB: Dumping buffer pool(s) not yet started
+2018-10-24 13:26:57 3688 [Note] Plugin 'FEEDBACK' is disabled.
+2018-10-24 13:26:57 3688 [Note] Server socket created on IP: '::'.
+2018-10-24 13:26:57 14388 [Warning] InnoDB: Cannot open table mysql/gtid_slave_pos from the internal data dictionary of InnoDB though the .frm file for the table exists. See http://dev.mysql.com/doc/refman/5.6/en/innodb-troubleshooting.html for how you can resolve the problem.
+2018-10-24 13:26:57 14388 [Warning] Failed to load slave replication state from table mysql.gtid_slave_pos: 1932: Table 'mysql.gtid_slave_pos' doesn't exist in engine
+2018-10-24 13:26:57 3688 [Note] d:\xampp\mysql\bin\mysqld.exe: ready for connections.
+Version: '10.1.35-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
