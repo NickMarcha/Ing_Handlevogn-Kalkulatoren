@@ -38,6 +38,7 @@ echo "Failed to connect to MySQL: " . mysqli_connect_error();
 
 $result = mysqli_query($conn,"SELECT * FROM kiwiprices");
 
+
 echo "<table border='1'>
 <tr>
 <th>barcode</th>
@@ -47,6 +48,9 @@ echo "<table border='1'>
 <th>price</th>
 </tr>";
 
+if(!$result) {printf("Error: %s\n", mysqli_error($conn));
+    exit();
+} else {
 while($row = mysqli_fetch_array($result))
 {
 echo "<tr>";
@@ -59,5 +63,6 @@ echo "</tr>";
 }
 echo "</table>";
 
+}
 mysqli_close($conn);
 ?>
