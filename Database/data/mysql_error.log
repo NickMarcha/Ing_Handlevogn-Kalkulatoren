@@ -45,3 +45,25 @@ Version: '10.1.8-MariaDB'  socket: ''  port: 3306  mariadb.org binary distributi
 2018-10-29 10:52:22 8204 [Note] Server socket created on IP: '::'.
 2018-10-29 10:52:23 8204 [Note] c:\xampp\mysql\bin\mysqld.exe: ready for connections.
 Version: '10.1.36-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution
+2018-10-31 13:01:02 1c58 InnoDB: Warning: Using innodb_additional_mem_pool_size is DEPRECATED. This option may be removed in future releases, together with the option innodb_use_sys_malloc and with the InnoDB's internal memory allocator.
+2018-10-31 13:01:02 7256 [Note] InnoDB: innodb_empty_free_list_algorithm has been changed to legacy because of small buffer pool size. In order to use backoff, increase buffer pool at least up to 20MB.
+
+2018-10-31 13:01:02 7256 [Note] InnoDB: Using mutexes to ref count buffer pool pages
+2018-10-31 13:01:02 7256 [Note] InnoDB: The InnoDB memory heap is disabled
+2018-10-31 13:01:02 7256 [Note] InnoDB: Mutexes and rw_locks use Windows interlocked functions
+2018-10-31 13:01:02 7256 [Note] InnoDB: _mm_lfence() and _mm_sfence() are used for memory barrier
+2018-10-31 13:01:02 7256 [Note] InnoDB: Compressed tables use zlib 1.2.3
+2018-10-31 13:01:02 7256 [Note] InnoDB: Using generic crc32 instructions
+2018-10-31 13:01:02 7256 [Note] InnoDB: Initializing buffer pool, size = 16.0M
+2018-10-31 13:01:02 7256 [Note] InnoDB: Completed initialization of buffer pool
+2018-10-31 13:01:03 7256 [Note] InnoDB: Highest supported file format is Barracuda.
+2018-10-31 13:01:03 7256 [Note] InnoDB: The log sequence number 1835037 in ibdata file do not match the log sequence number 1839900 in the ib_logfiles!
+2018-10-31 13:01:03 7256 [Note] InnoDB: Restoring possible half-written data pages from the doublewrite buffer...
+2018-10-31 13:01:04 7256 [Note] InnoDB: 128 rollback segment(s) are active.
+2018-10-31 13:01:04 7256 [Note] InnoDB: Waiting for purge to start
+2018-10-31 13:01:04 7256 [Note] InnoDB:  Percona XtraDB (http://www.percona.com) 5.6.39-83.1 started; log sequence number 1839900
+2018-10-31 13:01:04 9592 [Note] InnoDB: Dumping buffer pool(s) not yet started
+2018-10-31 13:01:04 7256 [Note] Plugin 'FEEDBACK' is disabled.
+2018-10-31 13:01:04 7256 [Note] Server socket created on IP: '::'.
+2018-10-31 13:01:04 7256 [Note] c:\xampp\mysql\bin\mysqld.exe: ready for connections.
+Version: '10.1.36-MariaDB'  socket: ''  port: 3306  mariadb.org binary distribution

@@ -18,7 +18,7 @@ $conn = mysqli_connect($servername, $username, $password, $database);
 		}
 		else{
 		  $sql = "INSERT INTO kiwiprices (productname, barcode,price)
-		  values ('$vareNavnInput','$vareStrekkodeInput', 'varePrisInput')";
+		  values ('$vareNavnInput','$vareStrekkodeInput', '$varePrisInput')";
 		  if ($conn->query($sql)){
 			echo "New record is inserted sucessfully";
 
