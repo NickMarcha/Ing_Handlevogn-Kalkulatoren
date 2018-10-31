@@ -2,13 +2,8 @@
     overflow: hidden;
     background-color: #333;
     font-family: Arial, Helvetica, sans-serif;
-	/* Dette gjør at nav-baren alltid vil være på toppen av nettsiden, selv når man scroller ned.
-	Dessverre ødelegger det også dropdown-menyen til teamsidene. Det gjør også at deler av den øverste teksten
-	på de forskjellige sidene blir dekket av nav-baren og dermed ikke blir mulig å lese.
-	position: fixed;
-	top: 0;
-	width: 100%;
-	*/
+	
+	
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -29,13 +24,14 @@
     overflow: hidden;
 }
 .dropdown .dropbtn {
-    font-size: 16px;
+	font-size: 16px;
+    text-align: center;
+    padding: 12px 12px;
+    text-decoration: none;
     border: none;
     outline: none;
     color: white;
     background-color: inherit;
-    font-family: "Comic Sans MS";
-    margin: 0;
 }
 .navbar a:hover, .dropdown:hover .dropbtn {
     background-color: red;
