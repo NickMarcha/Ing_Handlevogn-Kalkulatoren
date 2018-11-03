@@ -14,11 +14,46 @@
         });
     </script>
     <h1>Input</h1>
-    <form method="POST" action="postToServer.php">
+    <form method="POST" action="">
         <input placeholder="Hva er varens navn?" name="vareNavn" /> <br> <br>
         <input placeholder="Hva er varens strekkode?" name="vareStrekkode" /> <br> <br>
-        <input placeholder="Hva er varens pris?" name="varePris" /> <br> <br>
-        <input type="submit" value="Submit">
+        <input type="number" step="0.01" placeholder="Hva er varens pris?" name="varePris" /> <br> <br>
+        <input placeholder="Hvilket selskap produserer varen?" name="vareSelskap" /> <br> <br>
+        <input placeholder="Hvilken type vare er varen?" name="vareType" /> <br> <br>
+        <input type="submit" value="Submit" name="submit">
     </form>
 </body>
 </html>
+
+<?php
+    if (!isset($_POST["submit"]))
+    {
+        return;
+    }
+
+    $file = "database.txt";
+
+    $barcode = 0;
+    $productcompany = 1;
+    $producttype = 2;
+    $productname = 3;
+    $price = 4;
+
+    function appendFileLine($file, $line)
+    {            
+        $data = explode("\n", file_get_contents($file));
+        array_push($data, $line);
+        file_put_contents($file, implode("\n", $data));
+    }
+
+    appendFileLine($file, implode(",", 
+        array(
+            $_POST["vareStrekkode"], 
+            $_POST["vareSelskap"], 
+            $_POST["vareType"],
+            $_POST["vareNavn"],
+            $_POST["varePris"]
+        )));
+
+
+?>

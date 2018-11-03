@@ -41,9 +41,9 @@ echo "Failed to connect to MySQL: " . mysqli_connect_error();
 $result = mysqli_query($conn,"SELECT * FROM kiwiprices");
 mysqli_close($conn);
 */
-$file = "database.txt"
+$file = "database.txt";
 
-$barcode = 0
+$barcode = 0;
 $productcompany = 1;
 $producttype = 2;
 $productname = 3;
@@ -55,7 +55,7 @@ function readFileLine($file, $line)
 }
 function getFileLineCount($file)
 {            
-    return count(explode("\n", file_get_contents($file));
+    return count(explode("\n", file_get_contents($file)));
 }
 
 echo "<table border='1'>
@@ -69,7 +69,7 @@ echo "<table border='1'>
 
 for($i= 0; $i < getFileLineCount($file);  $i++ )
 {
-$row = readFileLine($file, $i);
+$row = explode(",", readFileLine($file, $i));
 
 echo "<tr>";
 echo "<td>" . $row[$barcode] . "</td>";
