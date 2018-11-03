@@ -23,6 +23,8 @@
 </html>
 
 <?php
+
+/*Deprecated
 $servername = "localhost";
 $database = "handlevognkalkulator";
 $username = "root";
@@ -37,7 +39,24 @@ echo "Failed to connect to MySQL: " . mysqli_connect_error();
 }
 
 $result = mysqli_query($conn,"SELECT * FROM kiwiprices");
+mysqli_close($conn);
+*/
+$file = "database.txt"
 
+$barcode = 0
+$productcompany = 1;
+$producttype = 2;
+$productname = 3;
+$price = 4;
+
+function readFileLine($file, $line)
+{            
+    return explode("\n", file_get_contents($file))[$line];
+}
+function getFileLineCount($file)
+{            
+    return count(explode("\n", file_get_contents($file));
+}
 
 echo "<table border='1'>
 <tr>
@@ -48,21 +67,22 @@ echo "<table border='1'>
 <th>price</th>
 </tr>";
 
-if(!$result) {printf("Error: %s\n", mysqli_error($conn));
-    exit();
-} else {
-while($row = mysqli_fetch_array($result))
+for($i= 0; $i < getFileLineCount($file);  $i++ )
 {
+$row = readFileLine($file, $i);
+
 echo "<tr>";
-echo "<td>" . $row['barcode'] . "</td>";
-echo "<td>" . $row['productcompany'] . "</td>";
-echo "<td>" . $row['producttype'] . "</td>";
-echo "<td>" . $row['productname'] . "</td>";
-echo "<td>" . $row['price'] . "</td>";
+echo "<td>" . $row[$barcode] . "</td>";
+echo "<td>" . $row[$productcompany] . "</td>";
+echo "<td>" . $row[$producttype] . "</td>";
+echo "<td>" . $row[$productname] . "</td>";
+echo "<td>" . $row[$price] . "</td>";
 echo "</tr>";
-}
-echo "</table>";
 
 }
-mysqli_close($conn);
+
+echo "</table>";
+
+
+
 ?>

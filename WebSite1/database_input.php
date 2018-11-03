@@ -14,11 +14,11 @@
         });
     </script>
     <h1>Input</h1>
-    <form method="POST" action="connect.php">
+    <form method="POST" action="postToServer.php">
         <input placeholder="Hva er varens navn?" name="vareNavn" /> <br> <br>
         <input placeholder="Hva er varens strekkode?" name="vareStrekkode" /> <br> <br>
         <input placeholder="Hva er varens pris?" name="varePris" /> <br> <br>
-        <input type="submit" value="Submit">Klikk her for å skrive til database</input>
+        <input type="submit" value="Submit">
     </form>
 </body>
 </html>
