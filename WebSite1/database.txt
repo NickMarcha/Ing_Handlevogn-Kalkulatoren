@@ -1,1 +1,7 @@
 987654302,Tine,Melk,Lett Melk,19.90
+1290783,Gilde,Ost,Hvit Ost,49.90
+0380100403,Tine,Rømme,Lett rømme,27
+03330013245,Fjordland,Smør,Bremykt,25
+900783007850,Heinz,Ketchup,Ketchup,35.80
+044610874685,PepsiCo,Brus,Pepsi Max,32
+039010132435,Stabburet ,Leverpostei,Leverpostei,8.75
