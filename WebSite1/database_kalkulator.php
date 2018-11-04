@@ -16,10 +16,12 @@
             <tr id="myRow">
                 <td>Product</td>
                 <td>Pris</td>
+                <td>Remove</td>
             </tr>
             <tr id="total">
                 <td>Total</td>
                 <td>0.00</td>
+                <td></td>
             </tr>
         </table>
         <script>
@@ -39,6 +41,8 @@
                 updateCart();
             }
 
+
+
             function updateCart(){
                 var table = document.getElementById("table");
 
@@ -48,12 +52,19 @@
                 var head = table.insertRow(0);
                 head.insertCell(0).appendChild(document.createTextNode('Vare'));
                 head.insertCell(1).appendChild(document.createTextNode('Pris'));
+                head.insertCell(2).appendChild(document.createTextNode('Remove'));
 
                 var totalPrice = 0;
                 for(var i = 0; i < Cart.length ; i++){
                     var row = table.insertRow(i + 1);
                     row.insertCell(0).appendChild(document.createTextNode(Cart[i].aProductname));
                     row.insertCell(1).appendChild(document.createTextNode(Cart[i].aPrice));
+                    var button = document.createElement("button");
+                    button.innerHTML = "X";
+
+                    button.setAttribute("onclick", "removeFromCart("+ i+")")
+
+                    row.insertCell(2).appendChild(button);
                     totalPrice += Cart[i].aPrice;
                 }
 
@@ -61,7 +72,12 @@
                 total.insertCell(0).appendChild(document.createTextNode('Total'));
                 totalPrice = Math.round(totalPrice * 100) / 100;
                 total.insertCell(1).appendChild(document.createTextNode( totalPrice +'kr'));
+                total.insertCell(2).appendChild(document.createTextNode(''));
 
+            }
+            function removeFromCart (arg) {
+                Cart.splice(arg,1);
+                updateCart();
             }
 
             var Products = new Array();
